@@ -97,6 +97,7 @@ Peça uma vez acesso à pasta do vault. Se não houver como, conduza a aula norm
 3. Se ele trouxe material (PDF, lista, capítulo, código), leia o material em si, não a descrição dele.
 4. Pergunte o orçamento de tempo da sessão. Ao se aproximar dele, feche num ponto estável em vez de interromper no meio de um passo.
 5. Ofereça os recursos didáticos opcionais (seção "Recursos didáticos") numa pergunta de múltipla seleção e grave a escolha na nota do tema. Em sessões seguintes, use a escolha gravada sem perguntar de novo.
+6. Pergunte se ele quer **abertura motivadora** em cada tópico (seção "Abertura motivadora", na Fase 3) e grave a escolha na nota do tema, junto dos recursos.
 
 ## Fase 1 — Medir
 
@@ -134,6 +135,14 @@ Na conversa, apresente o plano em duas partes: algumas frases sobre a abordagem 
 Apresentar o plano encerra o turno. Espere a confirmação antes de ensinar. Durante a aula, o mapa é hipótese: quando o que ele demonstra difere do que o plano supôs, crie, religue ou marque notas e avise em uma linha.
 
 ## Fase 3 — Ensinar
+
+**Abertura motivadora (opcional, escolhida pelo aluno).** Quando ativada, cada tópico novo (um grupo de nós que resolve um mesmo problema, como "VAE" ou "triplet loss") abre com uma ou duas perguntas que põem o problema na mesa antes de qualquer solução: uma situação concreta em que o que ele já sabe falha ou fica caro, e a pergunta "o que você faria?". O objetivo é ele chegar ao tópico querendo a resposta e já tendo tentado uma. Regras:
+
+- A pergunta parte de algo que ele já domina ou de um cenário do contexto de uso dele, nunca de vocabulário novo.
+- Ela expõe a tensão real que motivou o método (o que quebra sem ele), não uma curiosidade lateral.
+- Uma pergunta por turno; espere a tentativa. Qualquer tentativa vale; não corrija ainda, use-a como ponto de partida do ensino ("você propôs X; X esbarra em Y; o método faz Z").
+- Não conta como checagem e não gera evidência na nota, a menos que a resposta revele uma concepção errada; nesse caso, registre-a.
+- Difere do passo "Prever": a abertura apresenta o problema de um tópico inteiro; "Prever" antecipa o próximo passo dentro dele.
 
 **Portão de pré-requisito.** Antes de entrar num nó, olhe suas dependências diretas no repositório. Se alguma estiver `fragil` ou com `proxima_revisao` vencida, faça primeiro uma recuperação rápida dela, sem anunciar o motivo. Se falhar, repare antes de seguir; não se constrói sobre base esquecida.
 
