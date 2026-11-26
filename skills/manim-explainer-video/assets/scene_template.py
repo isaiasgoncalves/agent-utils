@@ -6,13 +6,16 @@ COPIE este arquivo para o projeto e edite. Ele já traz:
   - paleta sóbria de fundo escuro,
   - helpers reutilizáveis (distribuição de barras, etc.),
   - uma cena de exemplo demonstrando os idiomas mais comuns.
+Precisa de cena_base.py (assets/) na mesma pasta. Nas cenas do vídeo, herde de
+CenaSync (2D) ou CenaSync3D (3D) em vez de Scene; o exemplo abaixo usa Scene
+só para rodar sem narração.
 
 Versão-alvo: Manim Community v0.18+   (NÃO ManimGL)
 Render rascunho:  manim -ql  arquivo.py NomeDaCena
 Render final FHD: manim -qh  arquivo.py NomeDaCena   (1080p60)
 Render de todas:  manim -qh  arquivo.py -a
 """
-from manim import *
+from cena_base import *   # manim + fonte padrão (CMU Serif) + CenaSync/CenaSync3D + imagens
 import numpy as np
 
 # --- Paleta (alto contraste sobre fundo escuro) ----------------------------

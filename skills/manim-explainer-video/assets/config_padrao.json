@@ -1,0 +1,68 @@
+{
+  "_leia": "Padrões da skill. Para personalizar um vídeo, crie video.config.json na raiz do projeto só com as chaves que quer mudar (o resto vem daqui). Chaves de API ficam no ambiente ou num .env do projeto, nunca aqui.",
+
+  "idioma": "pt-BR",
+
+  "tts": {
+    "provedor": "auto",
+    "ordem_auto": ["elevenlabs", "gemini", "openai", "edge"],
+    "alinhamento": "auto",
+    "whisper_modelo": "small",
+
+    "elevenlabs": {
+      "voz_id": "",
+      "modelo": "eleven_multilingual_v2",
+      "idioma": "pt",
+      "estabilidade": 0.45,
+      "similaridade": 0.8,
+      "estilo": 0.15,
+      "velocidade": 1.0,
+      "speaker_boost": true
+    },
+    "gemini": {
+      "modelo": "gemini-3.8-flash-tts",
+      "voz": "Kore",
+      "estilo": "Narre em português do Brasil, com sotaque brasileiro natural, como um professor curioso e caloroso explicando matemática. Ritmo calmo, pausas curtas entre as frases, ênfase leve nos termos novos."
+    },
+    "openai": {
+      "modelo": "gpt-4o-mini-tts",
+      "voz": "coral",
+      "instrucoes": "Fale em português do Brasil, com sotaque brasileiro, tom de professor caloroso e ritmo calmo.",
+      "velocidade": 1.0
+    },
+    "edge": {
+      "voz": "pt-BR-ThalitaNeural",
+      "rate": "-4%"
+    },
+    "comando": {
+      "_exemplo": "piper --model ~/modelos/pt_BR-faber-medium.onnx --output_file {saida} < {texto}",
+      "cmd": "",
+      "ext": "wav"
+    },
+    "pronuncia": {}
+  },
+
+  "fonte": {
+    "texto": "CMU Serif",
+    "reserva": ["Latin Modern Roman", "DejaVu Serif"],
+    "latex": "computer-modern"
+  },
+
+  "imagens": {
+    "permitir_download": true,
+    "pasta": "assets/imagens",
+    "fontes_busca": ["wikimedia", "openverse"],
+    "licencas_aceitas": ["cc0", "pdm", "by", "by-sa"],
+    "max_mb": 15,
+    "mostrar_credito_na_tela": true
+  },
+
+  "pos_producao": {
+    "ativar": true,
+    "legendas": {"srt": true, "queimar": false, "max_caracteres": 42},
+    "capitulos": true,
+    "musica": {"arquivo": "", "volume_db": -24, "ducking": true, "fade_s": 2.0},
+    "loudness": {"normalizar": true, "lufs": -16, "true_peak": -1.5},
+    "hyperframes": {"usar": false, "abertura": false, "letreiros_capitulo": false, "creditos_finais": true}
+  }
+}

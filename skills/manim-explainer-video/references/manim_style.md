@@ -13,6 +13,28 @@ Leia ao escrever o código Manim (Etapa 3) e SEMPRE ao corrigir layout (Etapa 4)
 - Guie o olhar: `SurroundingRectangle`, `Arrow`/`CurvedArrow`, `Brace`,
   `Indicate`, e zoom (`.animate.scale().move_to()`).
 
+## Fonte (padrão: CMU Serif)
+- `cena_base.py` define **CMU Serif** como fonte padrão de `Text`, `MarkupText` e
+  `Paragraph`; `MathTex`/`Tex` já usam Computer Modern (o mesmo desenho), então
+  texto e fórmula combinam como num livro em LaTeX. Não passe `font=` à toa.
+- Trocar: `video.config.json -> fonte.texto` (e `fonte.reserva`). Se a fonte não
+  estiver instalada, cai na primeira reserva e avisa no render.
+- Para outra fonte também nas fórmulas: `fonte.latex = "mesma-do-texto"` (xelatex).
+- Ênfase: `Text("...", weight=BOLD)` ou `slant=ITALIC` (a CMU tem os dois).
+- Para tom mais técnico/código: `Text(..., font="CMU Typewriter Text")`.
+
+## Imagens reais
+- Baixe com `scripts/baixar_imagem.py` (Etapa 1) e use `imagem(caminho, altura=...)`
+  + `com_credito(img)` do `cena_base.py`. Créditos ficam pequenos sob a imagem.
+- Imagem é coadjuvante: ocupe até ~40% do quadro, deixe o texto/fórmula ao
+  lado; `FadeIn` (não `Write`) para entrar; fundo escuro em volta (sem moldura branca grossa).
+- Fotos claras sobre fundo escuro podem "estourar": reduza com
+  `img.set_opacity(0.9)` ou use `SurroundingRectangle` fino na cor neutra.
+
+## 3D
+Para superfícies, sólidos e descida de gradiente, use `CenaSync3D` e
+`assets/helpers_3d.py`; leia `references/animacoes_3d.md`.
+
 ## Idiomas (API estável do Manim Community v0.18+, NÃO ManimGL)
 - Texto: `Text(...)` (Pango). Fórmulas: `MathTex(r"...")` / `Tex(r"...")` (exigem LaTeX).
 - Gráficos: `Axes`, `axes.plot(lambda x: ...)`, `axes.c2p(x,y)`; anime com
@@ -78,6 +100,10 @@ Você NÃO consegue assistir ao vídeo. Renderize em `-ql`, extraia quadros com
    Um `Write` pela metade mostra texto parcial — isso é normal. Para julgar
    layout, extraia quadros em frações onde a cena está ESTÁTICA (após o `wait`),
    não no meio das transições.
+
+10. **Legenda queimada cobrindo conteúdo.**
+   Só acontece com `pos_producao.legendas.queimar = true`. Nesse caso, mantenha
+   os ~15% inferiores do quadro livres (nada abaixo de `y ≈ -2.9`).
 
 ## Checklist antes de declarar uma cena pronta
 - [ ] Renderizei em `-ql` e extraí ao menos 3-4 quadros estáticos.
