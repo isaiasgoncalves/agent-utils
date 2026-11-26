@@ -3,6 +3,26 @@
 
   "idioma": "pt-BR",
 
+  "entrevista": {"fazer": true, "max_rodadas": 2},
+
+  "equipe": {
+    "modo": "completo",
+    "_modos": "completo = revisor leigo + crítico de arte + professor revisor; so_revisao_final; desligado",
+    "nota_minima": 4,
+    "max_voltas_roteiro": 2,
+    "max_voltas_arte": 2
+  },
+
+  "roteiro": {"pdf": false},
+
+  "estilo": {
+    "paleta": {
+      "fundo": "#0d1117", "texto": "#ffffff", "neutro": "#9aa5b1", "objeto": "#4cc9f0",
+      "destaque": "#ffd166", "acerto": "#80ed99", "alerta": "#f72585",
+      "series": ["#4cc9f0", "#ffd166", "#80ed99", "#c77dff", "#ff9f1c"]
+    }
+  },
+
   "tts": {
     "provedor": "auto",
     "ordem_auto": ["elevenlabs", "gemini", "openai", "edge"],

@@ -1,6 +1,6 @@
 # Narração (TTS trocável) e montagem final
 
-Leia nas Etapas 3 e 6.
+Leia nas Etapas 5 (narração) e 8 (montagem).
 
 ## Escrevendo a narração
 - Idioma: **pt-BR por padrão** (`idioma` na config; outro só se o usuário pedir).
@@ -80,7 +80,7 @@ python <SKILL>/scripts/build_video.py \
 ```
 - Reaproveita `media/audio/`; se faltar áudio, chama `narrar.py` com a mesma config.
 - `--fps 15` + pasta `480p15` para um rascunho rápido com voz.
-- Grava `media/scenes_av/cenas.json` (início/duração de cada cena) para a Etapa 7.
+- Grava `media/scenes_av/cenas.json` (início/duração de cada cena) para a Etapa 9.
 
 ## Verificar o resultado final
 Não dá para "ouvir" aqui. Confirme com PyAV que o arquivo tem fluxo de vídeo E

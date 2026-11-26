@@ -26,7 +26,10 @@ que a narração disser sobre passos e valores bate com o que aparece.
 import numpy as np
 from manim import *
 
-C_AZUL, C_DEST, C_VERDE, C_ROSA, C_NEUTRO = "#4cc9f0", "#ffd166", "#80ed99", "#f72585", "#9aa5b1"
+try:                                   # mesma paleta do projeto (estilo.paleta)
+    from cena_base import C_AZUL, C_DEST, C_VERDE, C_ROSA, C_NEUTRO
+except ImportError:
+    C_AZUL, C_DEST, C_VERDE, C_ROSA, C_NEUTRO = "#4cc9f0", "#ffd166", "#80ed99", "#f72585", "#9aa5b1"
 
 
 def eixos_3d(x=(-3, 3, 1), y=(-3, 3, 1), z=(0, 3, 1), tam=(6, 6, 3), rotulos=("w_1", "w_2", "L")):

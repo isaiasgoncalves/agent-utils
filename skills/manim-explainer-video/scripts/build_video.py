@@ -4,7 +4,7 @@ build_video.py — Junta a narração de cada cena ao vídeo do Manim e concaten
 
 Usa os áudios que narrar.py gerou (media/audio/cena{i}.mp3). Se algum faltar,
 chama narrar.py com a configuração do projeto (video.config.json), então o
-provedor de voz é sempre o mesmo da Etapa 3.
+provedor de voz é sempre o mesmo da Etapa 5 (narração).
 
 Por que "sem cortar nada": se a fala durar mais que a animação, o último quadro
 (preto, pós fade-out) é congelado; se a animação durar mais, entra silêncio.

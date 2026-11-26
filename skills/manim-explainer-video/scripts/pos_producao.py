@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-pos_producao.py — Acabamento do vídeo montado (Etapa 7), tudo configurável em
+pos_producao.py — Acabamento do vídeo montado (Etapa 9), tudo configurável em
 video.config.json -> pos_producao.
 
 O que faz (cada item liga/desliga na config ou por flag):

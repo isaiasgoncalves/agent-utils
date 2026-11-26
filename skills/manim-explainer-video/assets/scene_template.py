@@ -18,13 +18,10 @@ Render de todas:  manim -qh  arquivo.py -a
 from cena_base import *   # manim + fonte padrão (CMU Serif) + CenaSync/CenaSync3D + imagens
 import numpy as np
 
-# --- Paleta (alto contraste sobre fundo escuro) ----------------------------
-BG       = "#0d1117"   # fundo
-C_NEUTRO = "#9aa5b1"   # texto secundário / eixos
-C_AZUL   = "#4cc9f0"   # objeto padrão
-C_DEST   = "#ffd166"   # destaque / conceito-alvo
-C_VERDE  = "#80ed99"   # acerto / convergência
-C_ROSA   = "#f72585"   # alerta / contraexemplo
+# --- Paleta -----------------------------------------------------------------
+# Vem do cena_base.py (video.config.json -> estilo.paleta; papéis em estilo.md):
+# BG, C_TEXTO, C_NEUTRO, C_AZUL (objeto), C_DEST (destaque), C_VERDE (acerto),
+# C_ROSA (alerta), C_SERIES (cores de séries em gráficos).
 
 
 # --- Helpers ----------------------------------------------------------------

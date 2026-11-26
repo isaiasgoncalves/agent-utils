@@ -1,4 +1,4 @@
-# Pós-produção (Etapa 7)
+# Pós-produção (Etapa 9)
 
 Leia depois do `build_video.py`. Tudo aqui é opcional e configurável em
 `video.config.json -> pos_producao`. A regra das skills de edição vale aqui

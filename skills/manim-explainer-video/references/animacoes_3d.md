@@ -1,6 +1,6 @@
 # Animações 3D (e outros recursos visuais para a didática)
 
-Leia na Etapa 2 (ao decidir se uma cena pede 3D) e na Etapa 4 (ao escrever).
+Leia na Etapa 3 (ao decidir se uma cena pede 3D) e na Etapa 6 (ao escrever).
 3D custa render mais lento e confunde se for decorativo. Use quando a terceira
 dimensão **é** o conteúdo: uma superfície de perda, um sólido, um campo no
 espaço, uma transformação de R³. Para o resto, 2D é mais legível.
@@ -92,7 +92,7 @@ mostre `det(M)` fixo na tela crescendo junto do volume.
 
 - 3D renderiza bem mais devagar. Itere em `-ql`, `res` baixo (16) e sem
   `orbitar`; suba tudo só no render final.
-- Na extração de quadros (Etapa 5), confira: fórmula fixa legível, trilha
+- Na extração de quadros (Etapa 7), confira: fórmula fixa legível, trilha
   visível sobre a superfície, eixos com rótulo, nada cortado pela câmera.
 
 ## Outras formas de enriquecer (além do Manim 3D)
@@ -103,7 +103,7 @@ mostre `det(M)` fixo na tela crescendo junto do volume.
   para cenas fotorealistas ou com materiais/iluminação que o Manim não faz
   (um objeto físico, um globo, partículas). Renderize como cena à parte e entre
   com ela no `narration.json` como mais uma cena (mesmo nome do `.mp4`).
-- **Overlays da pós-produção** (Etapa 7): letreiros de capítulo, cartões de
+- **Overlays da pós-produção** (Etapa 9): letreiros de capítulo, cartões de
   "resumo até aqui", destaque de termos — sem poluir as cenas do Manim.
 - **Simulações numéricas**: rode o modelo de verdade em NumPy (um SGD num
   dataset pequeno, uma cadeia de Markov) e anime os resultados; vale mais que

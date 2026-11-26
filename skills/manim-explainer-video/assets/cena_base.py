@@ -20,6 +20,10 @@ API de tempo
   self.left("frase", off=0, lo=0.3, hi=9) -> segundos até a frase (bom como run_time)
   self.finish(fade=0.5, tail=0.6)   -> espera o fim da fala, FadeOut de tudo, folga
 
+Paleta
+  BG, C_TEXTO, C_NEUTRO, C_AZUL (objeto), C_DEST (destaque), C_VERDE (acerto),
+  C_ROSA (alerta), C_SERIES (lista) — lidas de video.config.json -> estilo.paleta.
+
 Fonte
   Text/MarkupText/Paragraph usam FONTE (padrão "CMU Serif"; troque em
   video.config.json -> fonte.texto). MathTex/Tex usam Computer Modern, o mesmo
@@ -39,7 +43,6 @@ import numpy as np
 from manim import *
 
 AUDIO_DIR = os.environ.get("NARR_DIR", os.path.join("media", "audio"))
-BG = "#0d1117"
 
 
 # ------------------------------------------------------------ configuração --
@@ -52,6 +55,13 @@ def _cfg():
 
 
 _CFG = _cfg()
+_P = {"fundo": "#0d1117", "texto": "#ffffff", "neutro": "#9aa5b1", "objeto": "#4cc9f0",
+      "destaque": "#ffd166", "acerto": "#80ed99", "alerta": "#f72585",
+      "series": ["#4cc9f0", "#ffd166", "#80ed99", "#c77dff", "#ff9f1c"],
+      **_CFG.get("estilo", {}).get("paleta", {})}
+# Paleta do projeto (video.config.json -> estilo.paleta; significado em estilo.md)
+BG, C_TEXTO, C_NEUTRO, C_AZUL = _P["fundo"], _P["texto"], _P["neutro"], _P["objeto"]
+C_DEST, C_VERDE, C_ROSA, C_SERIES = _P["destaque"], _P["acerto"], _P["alerta"], _P["series"]
 _F = _CFG.get("fonte", {})
 _IMG = _CFG.get("imagens", {})
 

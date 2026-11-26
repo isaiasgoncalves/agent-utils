@@ -1,6 +1,6 @@
 # Ingestão de QUALQUER conteúdo (roteamento por tipo)
 
-Leia na Etapa 1. O objetivo é transformar qualquer entrada do usuário numa
+Leia na Etapa 2. O objetivo é transformar qualquer entrada do usuário numa
 **síntese técnica fiel** (`1_sintese.md`) — a fonte de verdade do vídeo. Primeiro
 identifique o TIPO de entrada e o ESCOPO; depois extraia o conteúdo com a
 ferramenta certa; só então sintetize.
@@ -65,6 +65,6 @@ python <SKILL>/scripts/baixar_imagem.py baixar <URL-da-figura> --nome fig3 \
   orientar o que você faz.
 
 ## Regra de ouro
-Independentemente do tipo de entrada, a partir da Etapa 2 o fluxo é o MESMO
+Independentemente do tipo de entrada, a partir da Etapa 3 o fluxo é o MESMO
 (roteiro → narração → Manim → render → montagem → pós). A ingestão é o único ponto que
 varia por modalidade; tudo converge para `1_sintese.md`.

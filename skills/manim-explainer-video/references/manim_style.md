@@ -1,6 +1,6 @@
 # Manim — estilo 3Blue1Brown e armadilhas de layout
 
-Leia ao escrever o código Manim (Etapa 3) e SEMPRE ao corrigir layout (Etapa 4).
+Leia ao escrever o código Manim (Etapa 6) e SEMPRE ao corrigir layout (Etapa 7).
 
 ## Estilo visual (referência: vídeos do 3Blue1Brown)
 - Fundo escuro (`self.camera.background_color = BG`), paleta sóbria com poucos
@@ -24,7 +24,7 @@ Leia ao escrever o código Manim (Etapa 3) e SEMPRE ao corrigir layout (Etapa 4)
 - Para tom mais técnico/código: `Text(..., font="CMU Typewriter Text")`.
 
 ## Imagens reais
-- Baixe com `scripts/baixar_imagem.py` (Etapa 1) e use `imagem(caminho, altura=...)`
+- Baixe com `scripts/baixar_imagem.py` (Etapa 2) e use `imagem(caminho, altura=...)`
   + `com_credito(img)` do `cena_base.py`. Créditos ficam pequenos sob a imagem.
 - Imagem é coadjuvante: ocupe até ~40% do quadro, deixe o texto/fórmula ao
   lado; `FadeIn` (não `Write`) para entrar; fundo escuro em volta (sem moldura branca grossa).
